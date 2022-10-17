@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400&family=Montez&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bad+Script&family=Indie+Flower&display=swap");
+:root {
+  /*==========typography==========================*/
+  --logo-font: "Bad Script", cursive;
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "Poppins", sans-serif;
+  --ff-dialogue: "Comic Neue", cursive;
+
+  --fs-headings: 2rem;
+  --fs-middle: 1.7rem;
+  --fs-text: 1.1rem;
+}
+
+/*=====================contacts===========================*/
+.contacts-container {
+  margin-top: 2em;
+}
+.contacts-title {
+  font-size: 3rem;
+  font-family: var(--logo-font);
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 0.5em;
+  color: #962016;
+}
+
+.contacts-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*-----------------------text-------------------------*/
+
+.contacts-text {
+  font-family: var(--ff-primary);
+  display: none;
+  background-color: #fff;
+}
+.contacts-text-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/*-----------------------pictures-------------------------*/
+.contacts-pics {
+  display: flex;
+  margin-bottom: 2em;
+  gap: 0.3em;
+}
+.contacts-pics-left,
+.contacts-pics-right {
+  display: flex;
+  gap: 0.3em;
+}
+
+.contacts-img {
+  box-shadow: 0px 3px 5px gray;
+  border-radius: 5px;
+  width: 50%;
+  border: 5px solid #fff;
+}
+
+/*-----------------------form-------------------------*/
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.form-title {
+  font-family: var(--logo-font);
+  font-size: var(--fs-middle);
+}
+.form-element:not(:last-child) {
+  margin-bottom: 2em;
+}
+.input-element {
+  padding: 0.5em;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.input-element::placeholder,
+.write-request::placeholder {
+  font-size: 0.8rem;
+  font-style: italic;
+  font-family: sans-serif;
+}
+.form-title-text {
+  margin-bottom: 0.5em;
+}
+.write-request {
+  resize: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0.5em;
+  width: 100%;
+}
+.form-btn-submit {
+  border-radius: 5px;
+  padding: 0.3em;
+  border: none;
+  background-color: #962016;
+  color: #fff;
+  font-weight: 500;
+  font-family: var(--logo-font);
+  font-size: var(--fs-middle);
+  letter-spacing: 1px;
+  box-shadow: 0px 5px 10px #741911;
+}
+
+/*=====================media=======================
+=========================================================*/
+
+@media (min-width: 768px) {
+  :root {
+    --fs-headings: 2.5rem;
+    --fs-text: 1.1rem;
+    --fs-middle: 1.5rem;
+  }
+
+  .contacts-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /*-----------------------text-------------------------*/
+  .contacts-text {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  .contacts-text > p {
+    margin: 1em;
+  }
+  .address,
+  .email,
+  .phone-number {
+    padding-bottom: 1.2em;
+    border-bottom: 2px solid gray;
+  }
+  .contacts-icon {
+    padding: 0.3em;
+    color: #962016;
+    font-size: var(--fs-middle);
+    transition: all 0.25s ease-in-out;
+    font-size: 1.3rem;
+    margin-right: 0.2em;
+  }
+  .contacts-icon:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    scale: 150%;
+  }
+
+  /*-----------------------pictures-------------------------*/
+  .contacts-pics {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    margin-right: -6em;
+    padding: 3em;
+    z-index: 2;
+  }
+
+  .contacts-pics-left,
+  .contacts-pics-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .contacts-img {
+    width: 90%;
+    box-shadow: 0px 9px 20px gray;
+    border: 5px solid #fff;
+  }
+
+  /*-----------------------form------------------------*/
+  .contacts-form {
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+  }
+  .form-btn-submit {
+    box-shadow: 0px 9px 20px #741911;
+    transition: all 0.15s ease-in-out;
+  }
+  .form-btn-submit:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+/*================================================================================extra-media to fix pics==================*/
+
+@media (min-width: 769px) and (max-width: 1150px) {
+  :root {
+    --fs-headings: 2.5rem;
+    --fs-text: 1.1rem;
+    --fs-middle: 1.5rem;
+  }
+
+  .contacts-main {
+    display: flex;
+  }
+  .contacts-text {
+    display: none;
+  }
+  .contacts-pics {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .contacts-pics-left,
+  .contacts-pics-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts-img {
+    width: 80%;
+  }
+}

@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400&family=Montez&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bad+Script&family=Indie+Flower&display=swap");
+:root {
+  /*==========typography==========================*/
+  --logo-font: "Bad Script", cursive;
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "Poppins", sans-serif;
+  --ff-dialogue: "Comic Neue", cursive;
+
+  --fs-headings: 2rem;
+  --fs-middle: 1.7rem;
+  --fs-text: 1.1rem;
+}
+.projects {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+.projects-title {
+  font-size: 3rem;
+  font-family: var(--logo-font);
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 0.5em;
+}
+
+.projects-grid-area {
+  margin-top: 2.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-items: center;
+}
+
+.coming-soon {
+  display: none;
+}
+.project-card {
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 18px 40px gray;
+}
+
+.project-card-img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+.project-card-title {
+  text-align: center;
+  font-size: var(--fs-middle);
+  font-family: var(--ff-primary);
+  letter-spacing: 0.5px;
+}
+.project-card-text {
+  font-size: var(--fs-text);
+  font-family: var(--ff-dialogue);
+  letter-spacing: 0.5px;
+  padding: 1em;
+  text-align: center;
+}
+.skills-icons {
+  margin-left: auto;
+}
+.fa-bootstrap,
+.fa-sass,
+.fa-css3-alt,
+.fa-html5 {
+  display: inline;
+}
+.fa-bootstrap {
+  color: #7633f9;
+}
+.fa-sass {
+  color: #982f63;
+}
+.fa-css3-alt {
+  color: #016fba;
+}
+.fa-html5 {
+  color: #9f3419;
+}
+
+.project-card-btn {
+  width: 90%;
+  border-radius: 5px;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: none;
+  font-family: var(--ff-secondary);
+  letter-spacing: 0.6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.125s ease-in-out;
+  box-shadow: 0px 2px 8px gray;
+  user-select: none;
+}
+
+
+.recycle > h3 {
+  color: #7e9f36;
+}
+.recycle > button {
+  color: #fff;
+  background-color: #7e9f36;
+}
+
+.bees > h3 {
+  color: #daa520;
+}
+.bees > button {
+  color: #fff;
+  background-color: #daa520;
+}
+
+.fashion > h3 {
+  color: #ba3f68;
+}
+.fashion > button {
+  color: #fff;
+  background-color: #ba3f68;
+}
+
+.travel > h3 {
+  color: #0499e8;
+}
+.travel > button {
+  color: #fff;
+  background-color: #0499e8;
+}
+@media (min-width: 768px) {
+  :root {
+    --fs-headings: 2.5rem;
+    --fs-text: 1.1rem;
+    --fs-middle: 1.5rem;
+  }
+  .projects-grid-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1em;
+    width: 100%;
+    justify-items: center;
+  }
+  .project-card {
+    width: 80%;
+    height: 100%;
+  }
+  .project-card-btn {
+    margin-top: auto;
+    margin-bottom: 1em;
+  }
+  .project-card-btn:hover {
+    opacity: 0.5;
+  }
+
+  /*----------------------hover--------------*/
+
+  .project-card {
+    position: relative;
+  }
+  .project-card:hover > .coming-soon {
+    opacity: 1;
+  }
+
+  .coming-soon {
+    display: block;
+    position: absolute;
+    top: 2em;
+    opacity: 0;
+    text-transform: capitalize;
+    font-family: var(--ff-dialogue);
+    font-weight: 600;
+    font-size: var(--fs-middle);
+    color: #000;
+    letter-spacing: 0.6px;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .project-card::before,
+  .project-card::after {
+    content: "";
+    position: absolute;
+    top: 1em;
+    bottom: calc(30em - 25%);
+    left: 1em;
+    right: 1em;
+  }
+  .project-card::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: scale(0, 1); /* scale x,y from middle*/
+    transition: transform 0.25s ease-out;
+  }
+
+  .project-card::after {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: scale(1, 0); /* change x,y from middle*/
+    transition: transform 0.25s ease-out;
+  }
+
+  .project-card:hover::before {
+    transform: scale(1.05, 1);
+  }
+
+  .project-card:hover::after {
+    transform: scale(1, 1.05);
+    opacity: 0.8;
+  }
+}

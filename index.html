@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-animation.css" />
+    <link rel="stylesheet" href="about-me-style.css" />
+    <link rel="stylesheet" href="projects-style.css" />
+    <link rel="stylesheet" href="contacts-style.css" />
+    <link rel="stylesheet" href="footer-style.css" />
+    <title>Serena Bottaro</title>
+  </head>
+  <body>
+    <div class="container">
+      <!----------------------------navbar------------------------>
+
+      <nav>
+        <div class="logo">
+          <svg
+            class="logo-img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 512"
+            width="2.2rem"
+            height="auto"
+            aria-label="laptop-icon"
+          >
+            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"
+            />
+          </svg>
+          <p class="logo-name">Serena Bottaro</p>
+        </div>
+
+        <input type="checkbox" id="toggle-nav" />
+        <label class="label-nav hamburger" for="toggle-nav">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li>
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li>
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <!-------------------------------intro---------------------------->
+      <section class="intro">
+        <img
+          class="intro-img"
+          src="/img/intro/intro-profile-02.JPG"
+          alt="profile image Serena Bottaro"
+        />
+        <h1 class="intro-info">
+          Hello, <br />
+          I'm <span class="intro-my-name">Serena</span> , <br />
+          web developer.
+        </h1>
+      </section>
+
+      <!---------------------------------projects------------------------>
+      <hr />
+      <section class="projects">
+        <h1 id="projects" class="projects-title">Projects 🌍</h1>
+
+        <div class="projects-area">
+          <div class="projects-grid-area">
+            <!--------->
+            <div class="project-card recycle">
+              <div class="coming-soon">coming soon</div>
+              <img
+                class="project-card-img recycle-img"
+                src="/img/projects/recycle.png"
+                alt="green recycle symbol"
+              />
+              <h3 class="project-card-title">LET'S CLEAN!</h3>
+              <p class="project-card-text">
+                We have to try to teach everybody, but especially kids, how to
+                protect their planet and their future!
+              </p>
+              <div class="skills-icons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+                <i class="fa-brands fa-sass"></i>
+              </div>
+              <button class="project-card-btn">View Project</button>
+            </div>
+            <!--------->
+
+            <div class="project-card bees">
+              <div class="coming-soon">coming soon</div>
+              <img
+                class="project-card-img bees-img"
+                src="/img/projects/bees.jpg"
+                alt="a bee in yellow flower"
+              />
+              <h3 class="project-card-title">PLAN-BEE</h3>
+              <p class="project-card-text">
+                Save the bees and their world is a must, because there will not
+                be any world without them.
+              </p>
+              <div class="skills-icons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+                <i class="fa-brands fa-sass"></i>
+              </div>
+              <button class="project-card-btn">View Project</button>
+            </div>
+            <!--------->
+
+            <div class="project-card fashion">
+              <div class="coming-soon">coming soon</div>
+              <img
+                class="project-card-img fashion-img"
+                src="/img/projects/fashion.jpg"
+                alt="folded colored sweaters"
+              />
+              <h3 class="project-card-title">SHOPPING & SUSTAINABILITY</h3>
+              <p class="project-card-text">
+                Let's start to work with an eco-green fashion industry and human
+                rights oriented.
+              </p>
+              <div class="skills-icons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <button class="project-card-btn">View Project</button>
+            </div>
+            <!--------->
+
+            <div class="project-card travel">
+              <div class="coming-soon">coming soon</div>
+              <img
+                class="project-card-img travel-img"
+                src="/img/projects/travel.jpg"
+                alt="a maldive island with ocean"
+              />
+              <h3 class="project-card-title">GREEN HOLIDAY</h3>
+              <p class="project-card-text">
+                Luxury is not the only amazing way to relax on holiday. Luxury
+                can be green, too!
+              </p>
+              <div class="skills-icons">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+                <i class="fa-brands fa-sass"></i>
+              </div>
+              <button class="project-card-btn">View Project</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!----------------------------about me------------------->
+
+      <section class="about-me-container">
+        <h1 id="about" class="about-title">About Me 🐠</h1>
+
+        <p class="about-area-start">" How it started..."</p>
+
+        <div class="about-intro">
+          <div class="q-mark">
+            <p class="q-point">?</p>
+            <p class="ex-point">!</p>
+            <p class="q-point-second">?</p>
+          </div>
+
+          <img
+            src="/img/about-me/comic-first-part.jpg"
+            alt="comic female thinking"
+            class="dialogue-img-f"
+          />
+          <p class="dialogue dialogue-f">
+            <cite>
+              " I have to create something... <br />
+              ...but... <br />
+              ...don't know what at all... <br />
+              maybe shoes...food...what...what... "</cite
+            >
+          </p>
+
+          <img
+            src="/img/about-me/comic-second-part.jpg"
+            alt="comic kid reading"
+            class="dialogue-img-m"
+          />
+
+          <p class="dialogue dialogue-m">
+            <cite>
+              " I think you should help the planet! <br />
+              Clean the world...</cite
+            >
+            ♻️<br />
+            <cite>Save the bees...</cite> 🐝<br />
+            <cite>Oh! come on! It's so easy! " </cite>
+          </p>
+
+          <img class="boom" src="/img/about-me/boom.jpg" alt="boom comic" />
+        </div>
+
+        <div class="about-animation">
+          <p class="about-area-end">" Ooohh...Many good ideas! "</p>
+          <div class="bulb-container">
+            <img class="bulb" src="/img/about-me/bulb.png" alt="animate bulb" />
+          </div>
+        </div>
+
+        <div class="about-me-info">
+          <img
+            src="/Users/serenabottaro/Desktop/personal-portfolio/img/about-me/about-img-profile-02.JPG"
+            alt="profile image with two parrots"
+            class="about-me-img"
+          />
+
+          <p class="about-me-description">
+            Hi there! My name is Serena, and a year ago I discover my passion
+            for coding and CSS. I created my first button with a coding app
+            and... the magic happend! I totally fell in love with coding and
+            styling elements, and here I'm am, enrolled in Start2Impact
+            University course to learn how to be a great web developer, and find
+            my first job.
+            <br />
+            <br />
+            I studied economy and accounting at school, then I decided to travel
+            almost 8 years as diving instructor.
+            <br />
+
+            It was a magical experience, I learned so much as a diver and as a
+            human. After diving job I moved to Dubai, working in sales then I
+            came back to my hometown, Padua, in 2014 and now I'm working in
+            sales and studying web devlopment at the same time.
+            <br />
+            <br />
+            I'd like to work in projects oriented to protect the environment
+            because I think nowdays is an important target to reach.
+            <br />
+            But also I'd like to help to develop small business, creating
+            websites and e-commerce.
+            <br />
+            <br />
+            About me, well, I'm an animal lover, I like the sea but mountains
+            too, I love hiking at high altitudes and I'm not that much into
+            social neworks 😅.
+          </p>
+
+          <img
+            class="about-img-diving"
+            src="/img/about-me/diving.JPG"
+            alt="profile image diver"
+          />
+        </div>
+      </section>
+      <hr />
+      <section class="contacts-container">
+        <h1 id="contacts" class="contacts-title">Contacts 📬</h1>
+
+        <div class="contacts-main">
+          <!-------------contacts-text--------------------------->
+
+          <div class="contacts-text">
+            <p class="address">
+              <span class="contacts-text-title">Address:</span> <br />
+              Main street, 62 - <br />
+              01001 - City - State
+            </p>
+
+            <p class="phone-number">
+              <span class="contacts-text-title">Mobile:</span> <br />
+              +00 - 012 34 56 789
+              <br />
+              +00 - 055 12 34 567
+            </p>
+
+            <p class="email">
+              <span class="contacts-text-title">Email:</span> <br />
+              email@email.com
+            </p>
+
+            <p class="contacts-social-links">
+              <i class="fa-brands fa-linkedin-in contacts-icon"></i>
+              <i class="fa-brands fa-github contacts-icon"></i>
+              <i class="fa-brands fa-facebook-f contacts-icon"></i>
+            </p>
+          </div>
+          <!-------------contacts------pictures--------------------------->
+          <div class="contacts-pics">
+            <div class="contacts-pics-left">
+              <img
+                class="contacts-img contacts-map"
+                src="/img/contacts/map02.jpg"
+                alt="treasure map"
+              />
+              <img
+                class="contacts-img contacts-typewriter"
+                src="/img/contacts/typewriter02.jpg"
+                alt="typewriter"
+              />
+            </div>
+            <div class="contacts-pics-right">
+              <img
+                class="contacts-img contacts-phone-box"
+                src="/img/contacts/phone-box.jpg"
+                alt="phone-box"
+              />
+
+              <img
+                class="contacts-img contacts-social"
+                src="/img/contacts/social01.jpg"
+                alt="social media
+              icons"
+              />
+            </div>
+          </div>
+          <!-------------contacts------form--------------------------->
+
+          <form class="contacts-form" action="">
+            <!---->
+            <div class="form-element">
+              <p class="form-title">Name</p>
+              <input
+                class="input-element"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name..."
+              />
+            </div>
+            <!---->
+            <div class="form-element">
+              <p class="form-title">Email</p>
+              <input
+                class="input-element"
+                type="number"
+                name="email"
+                id="email"
+                placeholder="Enter your email..."
+              />
+            </div>
+            <!---->
+            <div class="form-element">
+              <p class="form-title form-title-text">Text</p>
+              <textarea
+                class="write-request"
+                type="text"
+                name="text"
+                id="text"
+                placeholder="Write your request..."
+                rows="3"
+              >
+              </textarea>
+            </div>
+            <!---->
+            <input class="form-btn-submit" type="submit" value="Send !" />
+          </form>
+        </div>
+      </section>
+      <footer class="container-footer">
+        <div class="social-icon">
+          <i class="fa-brands fa-twitter footer-social-icon"></i>
+          <i class="fa-brands fa-linkedin-in footer-social-icon"></i>
+          <i class="fa-brands fa-github footer-social-icon"></i>
+          <i class="fa-brands fa-facebook-f footer-social-icon"></i>
+        </div>
+
+        <div class="footer-contacts-info">
+          <p class="footer-email">
+            <span class="footer-info-title">Email:</span><br />
+            email@email.com
+          </p>
+          <p class="footer-number">
+            <span class="footer-info-title">Mobile:</span><br />
+            +00 - 012 34 56 789 <br />
+            +00 - 055 12 34 567
+          </p>
+          <p class="footer-address">
+            <span class="footer-info-title">Address:</span><br />
+            Main street, 62 - <br />
+            01001 - City - State
+          </p>
+        </div>
+        <div class="footer-right-tab">
+          <div class="footer-credits">
+            <div class="credits-left-desk">
+              <p class="credits-title">Credits</p>
+              <p class="designed-by">pictures designed by:</p>
+            </div>
+            <p class="credits-text">
+              <a
+                class="credits-link"
+                href="https://www.freepik.com"
+                target="_blank"
+              >
+                Vector_Corp, Dgim-Studio <br />
+                Starline, Rawpixel.com, Freepik <br />
+                at Freepik.com</a
+              >
+              <br />
+              Comic pics at
+              <a
+                class="credits-link"
+                href="https://photocartoon.net/it"
+                target="_blank"
+                >Photocartoon.net</a
+              >
+            </p>
+          </div>
+
+          <div class="coded-by">
+            <p class="coded-by-text">
+              Coded by: <span class="coded-name">Serena Bottaro</span>
+            </p>
+          </div>
+        </div>
+      </footer>
+      <button class="to-top-btn" onclick="scrollToTop () ">⇧</button>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/1f25bafa85.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+      }
+    </script>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navList = document.querySelector(".nav-list");
+
+      const checkbox = document.querySelector("input");
+      const links = document.querySelectorAll(".nav-list a");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navList.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-link").forEach((n) =>
+        n.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navList.classList.remove("active");
+        })
+      );
+
+      for (const link of links) {
+        link.onclick = handleClick;
+      }
+
+      function handleClick() {
+        checkbox.checked = false;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400&family=Montez&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bad+Script&family=Indie+Flower&display=swap");
+
+:root {
+  /*==========typography==========================*/
+  --logo-font: "Bad Script", cursive;
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "Poppins", sans-serif;
+  --ff-dialogue: "Comic Neue", cursive;
+
+  --fs-headings: 2rem;
+  --fs-middle: 1.7rem;
+  --fs-text: 1.1rem;
+}
+/*=======================footer================================*/
+.container-footer {
+  margin-top: 2.5em;
+  background-color: rgba(200, 195, 195, 0.809);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.social-icon {
+  margin: 1em auto;
+}
+.fa-brands {
+  font-size: 1.3rem;
+  margin-right: 0.2em;
+  padding: 0.5em;
+}
+.footer-contacts-info {
+  font-family: var(--ff-dialogue);
+  color: #000;
+  letter-spacing: 0.5px;
+  font-size: var(--ff-dialogue);
+  text-align: center;
+}
+
+.footer-contacts-info > p {
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.footer-info-title {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.footer-credits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+  font-family: var(--ff-dialogue);
+  text-align: center;
+}
+.credits-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+.credits-text,
+.credits-link,
+.designed-by {
+  font-size: 0.8rem;
+}
+.coded-by {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: var(--fs-text);
+  font-family: var(--ff-dialogue);
+  letter-spacing: 0.5px;
+  padding-top: 0.5em;
+  border-top: 2px solid #000;
+}
+.coded-by-text {
+  margin-top: 1.5em;
+}
+.coded-name {
+  font-style: italic;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fs-headings: 2.5rem;
+    --fs-text: 1.1rem;
+    --fs-middle: 1.5rem;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .social-icon {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 1em;
+  }
+  .footer-contacts-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-contacts-info > p {
+    margin-bottom: 0;
+    margin-left: 4.5em;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .footer-address {
+    padding-right: 2em;
+  }
+
+  .footer-credits {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+  .credits-left {
+    text-align: center;
+  }
+  .coded-by {
+    margin-bottom: auto;
+    border: none;
+  }
+
+  .coded-name {
+    text-decoration: underline;
+    color: #962016;
+  }
+
+  .footer-right-tab {
+    margin-right: 2em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1220px) {
+  .footer-contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-content: center;
+    justify-content: center;
+    margin: 0.5em auto;
+  }
+
+  .footer-contacts-info > p {
+    margin-bottom: 0.3;
+    margin-left: 0;
+  }
+  .footer-address {
+    padding: 0;
+    border: none;
+  }
+
+  .footer-credits {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+  }
+  .coded-by {
+    margin-bottom: 0;
+    padding-top: 0.5em;
+  }
+}

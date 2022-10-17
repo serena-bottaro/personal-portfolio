@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400&family=Montez&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bad+Script&family=Indie+Flower&display=swap");
+:root {
+  /*==========typography==========================*/
+  --logo-font: "Bad Script", cursive;
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "Poppins", sans-serif;
+  --ff-dialogue: "Comic Neue", cursive;
+
+  --fs-headings: 2rem;
+  --fs-middle: 1.7rem;
+  --fs-text: 1.1rem;
+}
+.ex-point {
+  animation: ex-point-animation 0.7s infinite;
+  animation-delay: 0.7s;
+}
+
+@keyframes ex-point-animation {
+  0% {
+    color: red;
+  }
+
+  50% {
+    color: black;
+  }
+
+  100% {
+    color: red;
+  }
+}
+
+.q-point,
+.q-point-second {
+  animation: q-point-animation 0.7s infinite;
+}
+@keyframes q-point-animation {
+  0% {
+    color: black;
+  }
+
+  50% {
+    color: rgb(255, 204, 0);
+  }
+
+  100% {
+    color: black;
+  }
+}
+
+.bulb {
+  animation: bulb-light 1s infinite;
+}
+@keyframes bulb-light {
+  0% {
+    filter: drop-shadow(5px 5px 15px yellow);
+  }
+
+  50% {
+    filter: drop-shadow(15px 15px 35px yellow);
+  }
+
+  100% {
+    filter: drop-shadow(5px 5px 15px yellow);
+  }
+}

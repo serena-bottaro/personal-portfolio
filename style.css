@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400&family=Montez&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Bad+Script&family=Indie+Flower&display=swap");
+
+:root {
+  /*==========typography==========================*/
+  --logo-font: "Bad Script", cursive;
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "Poppins", sans-serif;
+  --ff-dialogue: "Comic Neue", cursive;
+
+  --fs-headings: 2rem;
+  --fs-middle: 1.7rem;
+  --fs-text: 1.1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  margin: 1.5rem;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: rgba(246, 243, 231, 0.739);
+}
+/*-----------------------navbar-----------------*/
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 0.8em 1.5em;
+  display: flex;
+  gap: 0.4em;
+}
+.logo-name {
+  font-size: var(--fs-middle);
+  font-family: var(--logo-font);
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2.5em;
+  list-style: none;
+  margin-right: 2em;
+}
+
+.nav-link {
+  padding: 0.7em 0.7em;
+  font-family: var(--logo-font);
+  color: #000;
+  font-size: var(--fs-text);
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: opacity 0.25s ease-in-out;
+  text-transform: capitalize;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
+#toggle-nav {
+  display: none;
+}
+/*======================intro====================*/
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+
+.intro-img {
+  border-radius: 8px;
+  width: 80%;
+  box-shadow: 0px 18px 40px -12px rgba(128, 128, 128);
+}
+
+.intro-info {
+  font-size: var(--fs-headings);
+  margin-top: 1em;
+  text-align: center;
+  font-family: var(--logo-font);
+}
+.intro-my-name {
+  font-size: var(--ff-primary);
+  color: #962016;
+}
+
+/*------------------top-btn-------------------*/
+
+.to-top-btn {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  padding: 0.7em;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #962016;
+  color: #962016;
+  scroll-behavior: smooth;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* ====================================================================================================media====================================================================================================*/
+
+@media (min-width: 768px) {
+  :root {
+    --fs-headings: 2.5rem;
+    --fs-text: 1.1rem;
+    --fs-middle: 1.5rem;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    width: min(95%, 1366px);
+  }
+
+  /*===============================intro==================*/
+  .intro {
+    margin: 5em auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+  }
+  .intro-info {
+    line-height: 1.5;
+    text-align: right;
+    margin-top: 0;
+  }
+  .intro-img {
+    order: 2;
+    width: 15rem;
+    float: left;
+  }
+}
+
+/*---------------navbar-mobile---------------------*/
+@media (max-width: 767px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: rgba(246, 243, 231);
+    border-bottom: 3px solid darkgray;
+    border-radius: 25px;
+
+    position: absolute;
+    top: -120vh;
+    transition: 0.45s ease-in-out;
+  }
+  .nav-list.active {
+    top: 4em;
+  }
+  .nav-list > li {
+    padding: 1em;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .label-nav {
+    z-index: 99;
+    position: absolute;
+    top: 0.8em;
+    right: 0.5em;
+    transition: 0.2s;
+    cursor: pointer;
+    padding: 0.5em 0.5em;
+  }
+  .label-nav > div {
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+    margin: 5px;
+    border-radius: 25px;
+    transition: transform 0.25s ease-in-out;
+  }
+  .logo {
+    margin-right: auto;
+  }
+
+  #toggle-nav:checked ~ .label-nav > div:nth-child(1) {
+    transform: rotateZ(45deg);
+    margin-top: 12px;
+  }
+  #toggle-nav:checked ~ .label-nav > div:nth-child(3) {
+    transform: rotateZ(-45deg);
+  }
+  #toggle-nav:checked ~ .label-nav > div:nth-child(2) {
+    opacity: 0;
+    margin-top: -18px;
+  }
+}
