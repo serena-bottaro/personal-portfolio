@@ -63,6 +63,7 @@ nav {
 .logo-name {
   font-size: var(--fs-middle);
   font-family: var(--logo-font);
+  color: #000;
 }
 .nav-list {
   display: flex;
