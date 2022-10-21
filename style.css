@@ -32,6 +32,7 @@ a {
   padding: 1em;
   border-radius: 10px;
   background-color: rgba(246, 243, 231, 0.739);
+  position: relative;
 }
 /*-----------------------navbar-----------------*/
 
@@ -41,6 +42,17 @@ nav {
   align-items: center;
   justify-content: space-between;
   
+}
+.fixed-nav {
+ position: sticky;
+ top: 0;
+ right: 0;
+ left: 0;
+ width: auto;
+ background-color: rgb(246, 243, 231);
+ z-index: 999;
+ border-radius: 0 0 10px 10px;
+
 }
 
 .logo {
@@ -60,6 +72,7 @@ nav {
   gap: 2.5em;
   list-style: none;
   margin-right: 2em;
+  
 }
 
 .nav-link {
@@ -90,6 +103,7 @@ nav {
   align-items: center;
   margin-top: 3em;
   margin-bottom: 4em;
+  padding-top: 2em;
 }
 
 .intro-img {
@@ -141,6 +155,16 @@ nav {
   }
   .container {
     width: min(95%, 1366px);
+    position: relative;
+  }
+  .fixed-nav{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    border-radius: 0 0 10px 10px;
+
   }
 
   /*===============================intro==================*/
@@ -171,6 +195,18 @@ nav {
     flex-direction: column;
     align-items: center;
     position: relative;
+    width: min(95%, 1366px);
+    
+  }
+  .fixed-nav{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    background-color: rgb(246, 243, 231);
+    z-index: 999;
+    border-radius: 0 0 10px 10px;
   }
   .nav-list {
     display: flex;
@@ -182,7 +218,7 @@ nav {
     padding-bottom: 1em;
     background-color: rgba(246, 243, 231);
     border-bottom: 3px solid darkgray;
-    border-radius: 25px;
+    border-radius: 0 0 25px 25px;
 
     position: absolute;
     top: -120vh;
