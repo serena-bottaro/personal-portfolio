@@ -41,18 +41,16 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  
 }
 .fixed-nav {
- position: sticky;
- top: 0;
- right: 0;
- left: 0;
- width: auto;
- background-color: rgb(246, 243, 231);
- z-index: 999;
- border-radius: 0 0 10px 10px;
-
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: auto;
+  background-color: rgb(246, 243, 231);
+  z-index: 999;
+  border-radius: 0 0 10px 10px;
 }
 
 .logo {
@@ -74,7 +72,6 @@ nav {
   gap: 2.5em;
   list-style: none;
   margin-right: 2em;
-  
 }
 
 .nav-link {
@@ -159,14 +156,13 @@ nav {
     width: min(95%, 1366px);
     position: relative;
   }
-  .fixed-nav{
+  .fixed-nav {
     position: sticky;
     top: 0;
     right: 0;
     left: 0;
     width: auto;
     border-radius: 0 0 10px 10px;
-
   }
 
   /*===============================intro==================*/
@@ -198,9 +194,8 @@ nav {
     align-items: center;
     position: relative;
     width: min(95%, 1366px);
-    
   }
-  .fixed-nav{
+  .fixed-nav {
     position: sticky;
     top: 0;
     right: 0;
@@ -227,13 +222,12 @@ nav {
   .nav-list.active {
     top: 2.5em;
   }
-  
+
   .nav-list > li {
     padding: 1em;
     text-align: center;
     line-height: 1.5;
   }
- 
 
   .label-nav {
     z-index: 99;
@@ -254,10 +248,10 @@ nav {
   }
   .logo {
     margin-right: auto;
-    padding:  0;
+    padding: 0;
   }
-  .logo-name{
-    font-size: calc( var(--fs-middle) - 15% );
+  .logo-name {
+    font-size: calc(var(--fs-middle) - 15%);
   }
 
   #toggle-nav:checked ~ .label-nav > div:nth-child(1) {

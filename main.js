@@ -1,15 +1,10 @@
-
-src="https://kit.fontawesome.com/1f25bafa85.js"
-crossorigin="anonymous";
-    
-    
 function scrollToTop() {
   window.scrollTo({
     top: 0,
     left: 0,
     behavior: "smooth",
   });
-};
+}
 
 const hamburger = document.querySelector(".hamburger");
 const navList = document.querySelector(".nav-list");
@@ -31,9 +26,8 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 
 for (const link of links) {
   link.onclick = handleClick;
-};
+}
 
 function handleClick() {
   checkbox.checked = false;
-};
-   
+}

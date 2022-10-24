@@ -1,231 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" href="footer-style.css">  
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer-style.css" />
 
-  <link rel="stylesheet" href="about-me-style.css" />
-  <link rel="stylesheet" href="style-animation.css" />
+    <link rel="stylesheet" href="about-me-style.css" />
+    <link rel="stylesheet" href="style-animation.css" />
 
-  <link rel="shortcut icon" href="./img/favicon04.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon04.png" type="image/x-icon" />
 
+    <title>Serena Bottaro - About me</title>
+  </head>
+  <body>
+    <div class="container" id="about">
+      <nav class="fixed-nav">
+        <div class="logo">
+          <a href="#home" class="logo logo-name">
+            <svg
+              class="logo-img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+              width="2.2rem"
+              height="auto"
+              aria-label="laptop-icon"
+            >
+              <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"
+              />
+            </svg>
+            <p class="logo-name">Serena Bottaro</p>
+          </a>
+        </div>
 
+        <input type="checkbox" id="toggle-nav" />
+        <label class="label-nav hamburger" for="toggle-nav">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
 
-  <title>Serena Bottaro - About me</title>
-  
-  
-</head>
-<body>
-  <div class="container" id="about">
-    <nav class="fixed-nav" >
-        
-      <div class="logo">
-        <a href="#home" class="logo logo-name">
-        <svg
-          class="logo-img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 640 512"
-          width="2.2rem"
-          height="auto"
-          aria-label="laptop-icon"
-        >
-          <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-          <path
-            d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"
+        <ul class="nav-list">
+          <li><a class="nav-link" href="./index.html">Home</a></li>
+          <li>
+            <a class="nav-link" href="./projects.html">Projects</a>
+          </li>
+          <li>
+            <a style="color: #902016" class="nav-link" href="./about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="./contacts.html">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="about-me-container">
+        <h1 id="about" class="about-title">About Me 🐠</h1>
+
+        <p class="about-area-start">" How it started..."</p>
+
+        <div class="about-intro">
+          <div class="q-mark">
+            <p class="q-point">?</p>
+            <p class="ex-point">!</p>
+            <p class="q-point-second">?</p>
+          </div>
+
+          <img
+            src="./img/about-me/comic-first-part.jpg"
+            alt="comic female thinking"
+            class="dialogue-img-f"
           />
-        </svg>
-        <p class="logo-name" >Serena Bottaro</p>
-      </a>
-      </div>
-    
-      <input type="checkbox" id="toggle-nav" />
-      <label class="label-nav hamburger" for="toggle-nav">
-        <div></div>
-        <div></div>
-        <div></div>
-      </label>
-    
-      <ul class="nav-list">
-        <li><a class="nav-link" href="./index.html">Home</a></li>
-        <li>
-          <a class="nav-link" href="./projects.html">Projects</a>
-        </li>
-        <li><a style="color:#902016" class="nav-link" href="./about.html">About</a></li>
-        <li>
-          <a  class="nav-link " href="./contacts.html">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-    <section class="about-me-container">
-      <h1 id="about" class="about-title">About Me 🐠</h1>
+          <p class="dialogue dialogue-f">
+            <cite>
+              " I have to create something... <br />
+              ...but... <br />
+              ...don't know what at all... <br />
+              maybe shoes...food...what...what... "</cite
+            >
+          </p>
 
-      <p class="about-area-start">" How it started..."</p>
+          <img
+            src="./img/about-me/comic-second-part.jpg"
+            alt="comic kid reading"
+            class="dialogue-img-m"
+          />
 
-      <div class="about-intro">
-        <div class="q-mark">
-          <p class="q-point">?</p>
-          <p class="ex-point">!</p>
-          <p class="q-point-second">?</p>
+          <p class="dialogue dialogue-m">
+            <cite>
+              " I think you should help the planet! <br />
+              Clean the world...</cite
+            >
+            ♻️<br />
+            <cite>Save the bees...</cite> 🐝<br />
+            <cite>Oh! come on! It's so easy! " </cite>
+          </p>
+
+          <img class="boom" src="./img/about-me/boom.jpg" alt="boom comic" />
         </div>
 
-        <img
-          src="./img/about-me/comic-first-part.jpg"
-          alt="comic female thinking"
-          class="dialogue-img-f"
-        />
-        <p class="dialogue dialogue-f">
-          <cite>
-            " I have to create something... <br />
-            ...but... <br />
-            ...don't know what at all... <br />
-            maybe shoes...food...what...what... "</cite
-          >
-        </p>
-
-        <img
-          src="./img/about-me/comic-second-part.jpg"
-          alt="comic kid reading"
-          class="dialogue-img-m"
-        />
-
-        <p class="dialogue dialogue-m">
-          <cite>
-            " I think you should help the planet! <br />
-            Clean the world...</cite
-          >
-          ♻️<br />
-          <cite>Save the bees...</cite> 🐝<br />
-          <cite>Oh! come on! It's so easy! " </cite>
-        </p>
-
-        <img class="boom" src="./img/about-me/boom.jpg" alt="boom comic" />
-      </div>
-
-      <div class="about-animation">
-        <p class="about-area-end">" Ooohh...Many good ideas! "</p>
-        <div class="bulb-container">
-          <img class="bulb" src="./img/about-me/bulb.png" alt="animate bulb" />
+        <div class="about-animation">
+          <p class="about-area-end">" Ooohh...Many good ideas! "</p>
+          <div class="bulb-container">
+            <img
+              class="bulb"
+              src="./img/about-me/bulb.png"
+              alt="animate bulb"
+            />
+          </div>
         </div>
-      </div>
 
-      <div class="about-me-info">
-        <img
-          src="./img/about-me/about-img-profile-02.JPG"
-          alt="profile image with two parrots"
-          class="about-me-img"
-        />
+        <div class="about-me-info">
+          <img
+            src="./img/about-me/about-img-profile-02.JPG"
+            alt="profile image with two parrots"
+            class="about-me-img"
+          />
 
-        <p class="about-me-description">
-          Hi there! My name is Serena, and a year ago I discover my passion
-          for coding and CSS. I created my first button with a coding app
-          and... the magic happend! I totally fell in love with coding and
-          styling elements, and here I'm am, enrolled in Start2Impact
-          University course to learn how to be a great web developer, and find
-          my first job.
-          <br />
-          <br />
-          I studied economy and accounting at school, then I decided to travel
-          almost 8 years as diving instructor.
-          <br />
+          <p class="about-me-description">
+            Hi there! My name is Serena, and a year ago I discover my passion
+            for coding and CSS. I created my first button with a coding app
+            and... the magic happend! I totally fell in love with coding and
+            styling elements, and here I'm am, enrolled in Start2Impact
+            University course to learn how to be a great web developer, and find
+            my first job.
+            <br />
+            <br />
+            I studied economy and accounting at school, then I decided to travel
+            almost 8 years as diving instructor.
+            <br />
 
-          It was a magical experience, I learned so much as a diver and as a
-          human. After diving job I moved to Dubai, working in sales then I
-          came back to my hometown, Padua, in 2014 and now I'm working in
-          sales and studying web devlopement at the same time.
-          <br />
-          <br />
-          I'd like to work in projects oriented to protect the environment
-          because I think nowdays is an important target to reach.
-          <br />
-          But also I'd like to help to develop small business, creating
-          websites and e-commerce.
-          <br />
-          <br />
-          About me, well, I'm an animal lover, I like the sea but mountains
-          too, I love hiking at high altitudes and I'm not that much into
-          social networks 😅.
-        </p>
+            It was a magical experience, I learned so much as a diver and as a
+            human. After diving job I moved to Dubai, working in sales then I
+            came back to my hometown, Padua, in 2014 and now I'm working in
+            sales and studying web devlopement at the same time.
+            <br />
+            <br />
+            I'd like to work in projects oriented to protect the environment
+            because I think nowdays is an important target to reach.
+            <br />
+            But also I'd like to help to develop small business, creating
+            websites and e-commerce.
+            <br />
+            <br />
+            About me, well, I'm an animal lover, I like the sea but mountains
+            too, I love hiking at high altitudes and I'm not that much into
+            social networks 😅.
+          </p>
 
-        <img
-          class="about-img-diving"
-          src="./img/about-me/diving.JPG"
-          alt="profile image diver"
-        />
-      </div>
-    </section>
-    
-    <!-----------------FOOTER---------------------------->
-    <footer class="container-footer">
-      <div class="social-icon">
-      
-       <a class="footer-social-icon"  href="https://www.linkedin.com/in/serena-bottaro/" target="_blank"> <i class="fa-brands fa-linkedin-in footer-social-icon"></i></a>
-       <a class="footer-social-icon"  href="https://github.com/serena-bottaro" target="_blank">  <i class="fa-brands fa-github footer-social-icon"></i></a>
-      
-      </div>
+          <img
+            class="about-img-diving"
+            src="./img/about-me/diving.JPG"
+            alt="profile image diver"
+          />
+        </div>
+      </section>
 
-      <div class="footer-contacts-info">
-        <p class="footer-email">
-         <span class="footer-info-title">Email:</span><br />
-         email@email.com
-        </p>
-    
-        <p class="footer-address">
-        <span class="footer-info-title">Address:</span><br />
-        Main street, 62 - <br />
-        01001 - City - State
-        </p>
-      </div>
-    
-      <div class="footer-credits">
-        
+      <!-----------------FOOTER---------------------------->
+      <footer class="container-footer">
+        <div class="social-icon">
+          <a
+            class="footer-social-icon"
+            href="https://www.linkedin.com/in/serena-bottaro/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in footer-social-icon"></i
+          ></a>
+          <a
+            class="footer-social-icon"
+            href="https://github.com/serena-bottaro"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github footer-social-icon"></i
+          ></a>
+        </div>
+
+        <div class="footer-contacts-info">
+          <p class="footer-email">
+            <span class="footer-info-title">Email:</span><br />
+            email@email.com
+          </p>
+
+          <p class="footer-address">
+            <span class="footer-info-title">Address:</span><br />
+            Main street, 62 - <br />
+            01001 - City - State
+          </p>
+        </div>
+
+        <div class="footer-credits">
           <p class="credits-title">Credits</p>
           <p class="designed-by">pictures designed by:</p>
-        
-        <p class="credits-text">
-          <a
-            class="credits-link"
-            href="https://www.freepik.com"
-            target="_blank"
-          >
-            Vector_Corp, Dgim-Studio <br />
-            Starline, Rawpixel.com, Freepik <br />
-            at Freepik.com</a
-          >
-          <br />
-          Comic pics at
-          <a
-            class="credits-link"
-            href="https://photocartoon.net/it"
-            target="_blank"
-            >Photocartoon.net</a
-          >
-        </p>
-      </div>
 
-      <div class="coded-by">
-        <p class="coded-by-text">
-          Coded by:
-           <br>
-           <span class="coded-name">Serena Bottaro</span>
-        </p>
-      </div>
-    
+          <p class="credits-text">
+            <a
+              class="credits-link"
+              href="https://www.freepik.com"
+              target="_blank"
+            >
+              Vector_Corp, Dgim-Studio <br />
+              Starline, Rawpixel.com, Freepik <br />
+              at Freepik.com</a
+            >
+            <br />
+            Comic pics at
+            <a
+              class="credits-link"
+              href="https://photocartoon.net/it"
+              target="_blank"
+              >Photocartoon.net</a
+            >
+          </p>
+        </div>
+
+        <div class="coded-by">
+          <p class="coded-by-text">
+            Coded by:
+            <br />
+            <span class="coded-name">Serena Bottaro</span>
+          </p>
+        </div>
       </footer>
 
       <button class="to-top-btn" onclick="scrollToTop () ">⇧</button>
-
-
     </div>
-        <script
-          src="https://kit.fontawesome.com/1f25bafa85.js"
-          crossorigin="anonymous"
-        ></script>  
+    <script
+      src="https://kit.fontawesome.com/1f25bafa85.js"
+      crossorigin="anonymous"
+    ></script>
 
-        <script src="main.js"></script> 
-
+    <script src="main.js"></script>
   </body>
 </html>
