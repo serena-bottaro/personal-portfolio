@@ -216,24 +216,24 @@ nav {
     align-items: center;
     width: 100%;
     margin: auto;
-    padding-top: 1em;
     padding-bottom: 1em;
     background-color: rgba(246, 243, 231);
     border-bottom: 3px solid darkgray;
     border-radius: 0 0 25px 25px;
-
     position: absolute;
     top: -120vh;
     transition: 0.45s ease-in-out;
   }
   .nav-list.active {
-    top: 4em;
+    top: 2.5em;
   }
+  
   .nav-list > li {
     padding: 1em;
     text-align: center;
     line-height: 1.5;
   }
+ 
 
   .label-nav {
     z-index: 99;
