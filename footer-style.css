@@ -66,8 +66,10 @@
 }
 .credits-text,
 .credits-link,
-.designed-by {
+.designed-by,
+.favicon-credit {
   font-size: 0.8rem;
+  font-style: italic;
 }
 .coded-by {
   margin-top: 1.5em;

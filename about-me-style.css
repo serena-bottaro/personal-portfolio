@@ -21,6 +21,27 @@
   letter-spacing: 1px;
   margin-bottom: 0.5em;
 }
+.skills {
+  margin: 3rem auto;
+}
+.skills-title {
+  font-size: 3rem;
+  font-family: var(--ff-dialogue);
+  font-weight: 400;
+  text-align: center;
+}
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.skills-name,
+.skills-icon {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-middle);
+}
 .about-area-start,
 .about-area-end {
   font-family: var(--logo-font);
