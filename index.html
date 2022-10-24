@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="projects-style.css" />
     <link rel="stylesheet" href="contacts-style.css" />
     <link rel="stylesheet" href="footer-style.css" />
+
     <link rel="shortcut icon" href="./img/favicon04.png" type="image/x-icon">
+
+    <script src="main.js"></script> 
     <title>Serena Bottaro</title>
   </head>
+  
   <body>
     <div class="container"  id="home">
       <!----------------------------navbar------------------------>
@@ -46,7 +50,7 @@
         </label>
       
         <ul class="nav-list">
-          <li><a class="nav-link" href="./index.html">Home</a></li>
+          <li><a style="color:#902016" class="nav-link" href="./index.html">Home</a></li>
           <li>
             <a class="nav-link" href="./projects.html">Projects</a>
           </li>
@@ -419,45 +423,6 @@
       <button class="to-top-btn" onclick="scrollToTop () ">⇧</button>
     </div>
 
-    <script
-      src="https://kit.fontawesome.com/1f25bafa85.js"
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: "smooth",
-        });
-      }
-    </script>
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navList = document.querySelector(".nav-list");
-
-      const checkbox = document.querySelector("input");
-      const links = document.querySelectorAll(".nav-list a");
-
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navList.classList.toggle("active");
-      });
-
-      document.querySelectorAll(".nav-link").forEach((n) =>
-        n.addEventListener("click", () => {
-          hamburger.classList.remove("active");
-          navList.classList.remove("active");
-        })
-      );
-
-      for (const link of links) {
-        link.onclick = handleClick;
-      }
-
-      function handleClick() {
-        checkbox.checked = false;
-      }
-    </script>
+    
   </body>
 </html>
