@@ -16,6 +16,8 @@
   margin-bottom: 2.5em;
 }
 .projects-title {
+  color: #962016;
+
   font-size: 3rem;
   font-family: var(--logo-font);
   text-align: center;
@@ -61,25 +63,25 @@
   padding: 1em;
   text-align: center;
 }
-.skills-icons {
+.projects-skills-icons {
   margin-left: auto;
 }
-.fa-bootstrap,
-.fa-sass,
-.fa-css3-alt,
-.fa-html5 {
+.projects-i-bootstrap,
+.projects-i-sass,
+.projects-i-css3,
+.projects-i-html5 {
   display: inline;
 }
-.fa-bootstrap {
+.projects-i-bootstrap {
   color: #7633f9;
 }
-.fa-sass {
+.projects-i-sass {
   color: #982f63;
 }
-.fa-css3-alt {
+.projects-i-css3 {
   color: #016fba;
 }
-.fa-html5 {
+.projects-i-html5 {
   color: #9f3419;
 }
 
@@ -130,6 +132,7 @@
   color: #fff;
   background-color: #0499e8;
 }
+
 @media (min-width: 768px) {
   :root {
     --fs-headings: 2.5rem;

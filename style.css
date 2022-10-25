@@ -121,7 +121,17 @@ nav {
   font-size: var(--ff-primary);
   color: #962016;
 }
+/*------------------read-more-link------------*/
 
+.link-read-more {
+  color: #962016;
+  text-decoration: underline;
+  letter-spacing: 0.6px;
+}
+.link-read-more:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 /*------------------top-btn-------------------*/
 
 .to-top-btn {

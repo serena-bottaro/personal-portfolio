@@ -11,24 +11,21 @@
   --fs-middle: 1.7rem;
   --fs-text: 1.1rem;
 }
+
 .about-me-container {
   margin-top: 2.5em;
 }
-.about-title {
+
+.skills {
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+.skills-title {
   font-size: 3rem;
   font-family: var(--logo-font);
   text-align: center;
   letter-spacing: 1px;
-  margin-bottom: 0.5em;
-}
-.skills {
-  margin: 3rem auto;
-}
-.skills-title {
-  font-size: 3rem;
-  font-family: var(--ff-dialogue);
-  font-weight: 400;
-  text-align: center;
+  color: #962016;
 }
 .skills-container {
   display: flex;
@@ -37,11 +34,27 @@
   justify-content: center;
   gap: 2em;
 }
-.skills-name,
-.skills-icon {
+.skill {
+  text-align: center;
+}
+.skills-name {
   font-family: var(--ff-primary);
   font-size: var(--fs-middle);
 }
+
+.skills-icon-html,
+.skills-icon-css {
+  font-size: 2rem;
+}
+.skills-icon-html {
+  color: #dd4b25;
+}
+.skills-icon-css {
+  color: #254bdd;
+}
+
+/*--------------------------end skills----------------------*/
+
 .about-area-start,
 .about-area-end {
   font-family: var(--logo-font);
@@ -143,12 +156,19 @@
 }
 
 /*-------------------------second part about---------------*/
-
+.about-title {
+  font-size: 2rem;
+  font-family: var(--logo-font);
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 2em;
+  font-weight: 500;
+  color: #962016;
+}
 .about-me-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 1em;
   margin-bottom: 1em;
 }
 .about-me-img {
@@ -254,7 +274,7 @@
     align-items: center;
     justify-content: space-between;
     width: min(1200px, 100%);
-    margin: 4em auto;
+    margin: 1em auto;
   }
   .about-me-img {
     flex: 1;
