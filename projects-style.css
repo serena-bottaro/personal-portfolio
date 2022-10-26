@@ -63,14 +63,14 @@
   padding: 1em;
   text-align: center;
 }
-.projects-skills-icons {
-  margin-left: auto;
-}
+
 .projects-i-bootstrap,
 .projects-i-sass,
 .projects-i-css3,
 .projects-i-html5 {
   display: inline;
+  margin-left: 0.5em;
+  font-size: var(--fs-middle);
 }
 .projects-i-bootstrap {
   color: #7633f9;
