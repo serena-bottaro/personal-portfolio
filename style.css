@@ -54,7 +54,7 @@ nav {
 }
 
 .logo {
-  padding: 0.8em 1.5em;
+  padding: 0.2em 1em;
   display: flex;
   gap: 0.4em;
   color: #000;
@@ -258,7 +258,7 @@ nav {
   }
   .logo {
     margin-right: auto;
-    padding: 0;
+    padding: 0em 0.5em;
   }
   .logo-name {
     font-size: calc(var(--fs-middle) - 15%);
