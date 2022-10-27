@@ -179,6 +179,7 @@ nav {
   /*===============================intro==================*/
   .intro {
     margin: 5em auto;
+    padding-bottom: 3em;
     display: flex;
     flex-direction: row;
     align-items: center;
