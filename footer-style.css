@@ -22,14 +22,12 @@
   align-items: center;
   border-radius: 3px;
 }
-.social-icon {
-  padding: 1em;
-}
+
 .footer-social-icon {
-  color: #000;
-  font-size: 1.3rem;
+  color: #962016;
+  font-size: 1.5rem;
   margin-right: 0.2em;
-  padding: 0.5em;
+  padding: 1em 0.2em;
 }
 .footer-contacts-info {
   font-family: var(--ff-dialogue);
@@ -56,6 +54,7 @@
   margin-top: 1em;
   font-family: var(--ff-dialogue);
   text-align: center;
+  line-height: 1;
 }
 .credits-title {
   font-weight: 600;
@@ -66,10 +65,10 @@
 .credits-link,
 .designed-by,
 .favicon-credit {
-  font-size: 0.8rem;
-  font-style: italic;
+  font-size: 0.7rem;
 }
 .coded-by {
+  text-align: center;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   font-size: var(--fs-text);
@@ -99,8 +98,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
   }
 
   .social-icon {
