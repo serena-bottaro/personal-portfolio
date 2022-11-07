@@ -66,7 +66,13 @@
 }
 
 /*-----------------------form-------------------------*/
-
+.not-working-form {
+  color: #962016;
+  font-family: var(--ff-dialogue);
+  font-size: calc(var(--fs-text)- 5%);
+  font-style: italic;
+  margin-bottom: 1em;
+}
 .contacts-form {
   display: flex;
   flex-direction: column;
